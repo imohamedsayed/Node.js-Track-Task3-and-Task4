@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>{{title}}</title>
+  </head>
+  <body>
+    {{>header}}
+    <div class="page-view">
+        <div class="country-data">
+            <h2>{{location.city}}, <span class="country">{{location.country}}</span></h2>
+            <p class="lat-lng">Latitude and longitude :  <span class="lat">{{lat}}</span><span class="lng">{{lat}}</span> </p>
+        </div>
+        <div class="weather-data">
+            <img src="./images/{{weather.icon}}" alt="">
+            <p class="temp">{{weather.temp}} <sup>o</sup></p>
+            <p class="weather-status">Partial Cloudy</p>
+            <p class="date">{{date}}</p>
+        </div>
+    </div>
+  </body>
+</html>

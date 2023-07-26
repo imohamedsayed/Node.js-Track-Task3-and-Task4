@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Cormorant Garamond", sans-serif, aria;
+  background: url("../images/back2.jpg") top center;
+  background-size: cover;
+}
+body.home {
+  background: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #393e41;
+  padding: 20px 40px;
+  font-size: 1.4rem;
+  color: #e7e5df;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 0 20px;
+  color: #e7bb41;
+}
+header a:hover {
+  transform: scale(1.3);
+}
+
+.page-view {
+  color: #fff;
+  /* background: url("./stars1.png") top center; */
+  background-size: cover;
+  min-height: calc(100vh - 85px);
+  padding: 50px 200px;
+}
+.country-data {
+  font-size: 1.8rem;
+}
+.country-data h2 .country {
+  color: rgb(213, 222, 84);
+}
+.country-data p {
+  font-size: 1.9rem;
+}
+.country-data p span {
+  margin: 0 20px;
+}
+.weather-data {
+  text-align: center;
+  font-size: 4rem;
+  padding: 20px;
+  background: #c0b8b861;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 80px;
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  box-shadow: 1px 1px 15px 1px #ffffffb2;
+}
+.weather-data img {
+  width: 200px;
+}
+.weather-data sup {
+  color: gold;
+  font-size: 1.8rem;
+  margin-left: -10px;
+}
+.weather-data .date {
+  margin-top: 15px;
+  font-size: 1.8rem;
+}
+
+.weather-data .weather-status {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1153px) {
+  .page-view {
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 870px) {
+  .weather-data {
+    width: 100%;
+  }
+}
+
+@media (max-width: 604px) {
+  .page-view {
+    padding: 10px;
+  }
+  header {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  .country-data,
+  .country-data .lat-lng {
+    font-size: 1.8rem;
+  }
+  .country-data .lat-lng {
+    margin-top: 20px;
+    color: #e8e288;
+  }
+  .weather-data {
+    font-size: 2rem;
+  }
+  .weather-data .weather-status {
+    font-size: 1.2rem;
+  }
+  .weather-data img {
+    width: 100px;
+  }
+}
+
+/*
+    --> Home Design
+*/
+
+.home-intro {
+  color: #393e41;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+.home-intro .intro h1 {
+  font-size: 7rem;
+}
+.home-intro .intro p {
+  font-size: 2.3rem;
+}
+.home-intro img {
+  width: 550px;
+}
+.home-intro button {
+  width: 220px;
+  height: 40px;
+  border: 1px solid #e7bb41;
+  color: #e7bb41;
+  font-weight: 500;
+  background: transparent;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.home-intro button:hover {
+  color: #fff;
+  background: #e7bb41;
+}
+
+@media (max-width: 1048px) {
+  .home-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-intro .intro h1 {
+    font-size: 4rem;
+  }
+  .home-intro .intro p {
+    font-size: 1.3rem;
+  }
+  .home-intro img {
+    width: 450px;
+  }
+}
+@media (max-width: 452px) {
+  .home-intro img {
+    width: 350px;
+  }
+}
