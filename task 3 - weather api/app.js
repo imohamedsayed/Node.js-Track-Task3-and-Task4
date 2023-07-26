@@ -14,7 +14,7 @@ if (location) {
         if (err) {
           console.log(err);
         } else {
-          console.log(data.location);
+          console.log(data.location, lat, lng);
           console.log(data.weather);
           console.log("temp : ", data.temp);
         }
